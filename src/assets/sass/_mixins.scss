@@ -1,0 +1,15 @@
+@mixin heading-l {
+  font-size: $text-4xl;
+  font-weight: $font-bold;
+  line-height: 2.6875rem;
+}
+@mixin heading-m {
+  font-size: $text-2xl;
+  font-weight: $font-bold;
+  line-height: 1.9375rem;
+}
+@mixin body {
+  font-size: $text-lg;
+  font-weight: $font-bold;
+  line-height: 1.4375rem;
+}
