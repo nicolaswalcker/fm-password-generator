@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+import svgLoader from 'vite-svg-loader'
 
 export default defineConfig({
   resolve: {
@@ -12,16 +13,17 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-        @import "./src/assets/sass/_variables.scss";
-        @import "./src/assets/sass/_fonts.scss";
-        @import "./src/assets/sass/_mixins.scss";
-        @import "./src/assets/sass/_breakpoints.scss";
-        @import "./src/assets/sass/_colors.scss";
-        @import "./src/assets/sass/_normalize.scss";
-        @import "./src/assets/sass/_global.scss";
+        @import "/src/assets/sass/variables";
+        @import "/src/assets/sass/fonts";
+        @import "/src/assets/sass/mixins";
+        @import "/src/assets/sass/breakpoints";
+        @import "/src/assets/sass/transitions";
+        @import "/src/assets/sass/colors";
+        @import "/src/assets/sass/normalize";
+        @import "/src/assets/sass/global";
         `,
       },
     },
   },
-  plugins: [vue()],
+  plugins: [vue(), svgLoader()],
 })
