@@ -54,7 +54,7 @@
         />
       </ul>
       <div class="generator__main__strength">
-        <p class="generator__main__strength__label">stregth</p>
+        <p class="generator__main__strength__label">strength</p>
         <article class="generator__main__strength__meter">
           <p class="generator__main__strength__meter__label">
             {{ classifyPassword(finalPassword)?.text }}
